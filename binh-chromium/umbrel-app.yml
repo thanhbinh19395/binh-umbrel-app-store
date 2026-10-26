@@ -1,0 +1,30 @@
+manifestVersion: 2.0
+id: binh-chromium
+storage:
+  dataRoot: data
+category: networking
+name: Chromium
+version: "2dba585f"
+tagline: Remote Chromium browser powered by LinuxServer.io
+description: >-
+  A full Chromium desktop streamed to your browser, packaged for Umbrel.
+
+  Uses the LinuxServer.io Chromium image. Sign in with the admin password shown
+  in this app's Umbrel settings (Umbrel login is required before you open the app).
+
+  Open over HTTPS when prompted — newer Chromium builds need a secure context for
+  audio and video.
+
+  Profile and settings are stored under this app's data folder.
+releaseNotes: ""
+developer: LinuxServer.io
+website: https://docs.linuxserver.io/images/docker-chromium/
+dependencies: []
+repo: https://github.com/linuxserver/docker-chromium
+support: https://discourse.linuxserver.io/
+port: 30100
+path: ""
+requiresHttps: true
+defaultUsername: umbrel
+deterministicPassword: true
+gallery: []
