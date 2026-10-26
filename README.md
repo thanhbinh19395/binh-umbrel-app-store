@@ -10,11 +10,10 @@ Personal Umbrel community app store with a **Chromium** app using the [LinuxServ
 
 ## Add this store on Umbrel
 
-1. Push this repository to GitHub (public repo).
-2. On your Umbrel (owner account): **App Store** → **⋯** → **Community App Stores**.
-3. Paste the GitHub URL, for example `https://github.com/<your-user>/binh-umbrel-app-store`, then **Add**.
-4. Open the **Binh** store and install **Chromium**.
-5. When opening the app, choose **Open over HTTPS** if umbrelOS asks (required for this image).
+1. On your Umbrel (owner account): **App Store** → **⋯** → **Community App Stores**.
+2. Paste `https://github.com/thanhbinh19395/binh-umbrel-app-store`, then **Add**.
+3. Open the **Binh** store and install **Chromium**.
+4. When opening the app, choose **Open over HTTPS** if umbrelOS asks (required for this image).
 
 ## Login
 
