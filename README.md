@@ -24,6 +24,24 @@ Personal Umbrel community app store with a **Chromium** app using the [LinuxServ
 
 Umbrel installs from a copied app package under `app-data/`. To test changes, update files in this repo, push, then update or reinstall the app from your community store on the device.
 
+## Install fails with HTTP 429 (too many requests)
+
+Docker registries rate-limit anonymous pulls (often per public IP). Umbrel and your home network share that limit with other users in some cases.
+
+1. Wait **2–5 minutes**, then try **Install** again.
+2. On the Umbrel host (SSH or **Portainer** terminal), log in to Docker Hub for a higher pull quota:
+   ```bash
+   sudo docker login
+   ```
+   Use a free [Docker Hub](https://hub.docker.com/) account, then reinstall the app.
+3. Pull the image once manually, then install from the store again:
+   ```bash
+   sudo docker pull lscr.io/linuxserver/chromium:version-2dba585f
+   ```
+4. If it still fails, try again later or from a different network (e.g. phone hotspot) to get a fresh IP.
+
+This package uses **`lscr.io/linuxserver/chromium`** (LinuxServer’s registry) instead of `ghcr.io` to reduce 429 errors on install.
+
 ## Security
 
 This store is not reviewed by Umbrel. The browser container is powerful — do not expose it to the public internet without extra protection.

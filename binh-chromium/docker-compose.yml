@@ -7,7 +7,7 @@ services:
       APP_PORT: 3000
 
   chromium:
-    image: ghcr.io/linuxserver/chromium:version-2dba585f@sha256:f2d4b8b284918d8d65e10921e2fc84c57fd7edbc15345ddb3c024f0949f0031c
+    image: lscr.io/linuxserver/chromium:version-2dba585f@sha256:f2d4b8b284918d8d65e10921e2fc84c57fd7edbc15345ddb3c024f0949f0031c
     user: "1000:1000"
     restart: on-failure
     shm_size: "2gb"
