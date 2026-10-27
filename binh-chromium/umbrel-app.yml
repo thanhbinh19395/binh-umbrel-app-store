@@ -4,7 +4,7 @@ storage:
   dataRoot: data
 category: networking
 name: Chromium
-version: "2dba585f"
+version: "2.0.1"
 tagline: Remote Chromium browser powered by LinuxServer.io
 description: >-
   A full Chromium desktop streamed to your browser, packaged for Umbrel.
